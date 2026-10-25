@@ -144,7 +144,9 @@ footer { min-height: 84px; width: min(calc(100% - 48px), var(--max)); margin: 0 
   .mobile-nav a { flex: 0 0 auto; padding: 7px 14px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; font-size: 13px; }
   .mobile-nav a:hover, .mobile-nav a:focus-visible { color: var(--text); border-color: var(--accent); }
   .hero { grid-template-columns: 1fr; gap: 55px; padding-top: 58px; }
-  .terminal-card { max-width: 610px; transform: none; }
+  .noise { display: none; }
+  .terminal-card { max-width: 610px; transform: none; backdrop-filter: none; }
+  .hero::before, .radar b, .signal-marquee div { animation: none; }
   .proof-strip { grid-template-columns: repeat(2, 1fr); }
   .proof-strip div:nth-child(2) { border-right: 0; }.proof-strip div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .timeline-item { grid-template-columns: 1fr; gap: 18px; }
@@ -182,4 +184,5 @@ footer { min-height: 84px; width: min(calc(100% - 48px), var(--max)); margin: 0 
 
 @media (hover: none), (pointer: coarse) {
   .cursor-glow { display: none; }
+  .tilt-card { transform: none; }
 }

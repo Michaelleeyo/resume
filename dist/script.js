@@ -23,12 +23,17 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
 
-window.addEventListener("pointermove", (event) => {
-  root.style.setProperty("--mouse-x", `${event.clientX}px`);
-  root.style.setProperty("--mouse-y", `${event.clientY}px`);
-});
+const supportsPointerEffects = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+if (supportsPointerEffects) {
+  window.addEventListener("pointermove", (event) => {
+    root.style.setProperty("--mouse-x", `${event.clientX}px`);
+    root.style.setProperty("--mouse-y", `${event.clientY}px`);
+  }, { passive: true });
+}
+
+if (supportsPointerEffects && !prefersReducedMotion) {
   document.querySelectorAll(".tilt-card").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       const rect = card.getBoundingClientRect();
