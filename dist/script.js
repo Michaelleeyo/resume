@@ -1,4 +1,5 @@
 const root = document.documentElement;
+root.classList.add("js");
 const savedTheme = localStorage.getItem("portfolio-theme");
 if (savedTheme) root.dataset.theme = savedTheme;
 

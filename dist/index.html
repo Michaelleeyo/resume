@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="张力的软件开发工程师个人主页，专注 Python 后端、数据处理与复杂业务落地。" />
     <meta name="theme-color" content="#0a0d12" />
+    <meta property="og:title" content="张力 · 软件开发工程师" />
+    <meta property="og:description" content="专注 Python 后端、数据处理与复杂业务落地。" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://me.michaellee.win/" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary" />
     <title>张力 · 软件开发工程师</title>
-    <link rel="stylesheet" href="./styles.css?v=20261025-3" />
+    <link rel="canonical" href="https://me.michaellee.win/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20261025-4" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "张力",
+        "url": "https://me.michaellee.win/",
+        "email": "mailto:hi@michaellee.win",
+        "jobTitle": "软件开发工程师",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "南京",
+          "addressCountry": "CN"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "南京审计大学"
+        },
+        "knowsAbout": ["Python", "SQL", "TypeScript", "Docker", "Kubernetes", "数据处理"],
+        "sameAs": ["https://github.com/Michaelleeyo"]
+      }
+    </script>
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -25,6 +54,13 @@
       </nav>
       <button class="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">◐</button>
     </header>
+
+    <nav class="mobile-nav section-shell" aria-label="移动端导航">
+      <a href="#work">经历</a>
+      <a href="#projects">项目</a>
+      <a href="#stack">能力</a>
+      <a href="#contact">联系</a>
+    </nav>
 
     <main id="top">
       <section class="hero section-shell">
@@ -72,7 +108,7 @@
         <div><strong>5+ 年</strong><span>软件行业经历</span></div>
         <div><strong>3 个</strong><span>高校项目持续交付</span></div>
         <div><strong>全流程</strong><span>开发 · 部署 · 排障</span></div>
-        <div><strong>本科</strong><span>计算机科学与技术</span></div>
+        <div><strong>南审本科</strong><span>计算机科学与技术</span></div>
       </section>
 
       <section id="work" class="section-shell section-block">
@@ -171,11 +207,11 @@
         <div class="section-shell contact-inner reveal">
           <p class="eyebrow">04 / CONTACT</p>
           <h2>期待参与真正落地的<br />软件与业务系统。</h2>
-          <p>求职方向：软件开发工程师 · Python 后端 · 测试开发<br />意向城市：南京</p>
+          <p>求职方向：软件开发工程师 · Python 后端<br />意向城市：南京</p>
           <div class="contact-links">
             <a href="mailto:hi@michaellee.win">hi@michaellee.win</a>
             <span>·</span>
-            <a href="https://me.michaellee.win">me.michaellee.win</a>
+            <a href="https://github.com/Michaelleeyo/resume" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           <div class="contact-actions">
             <a class="button contact-download" href="./resume.pdf" download="张力_软件开发工程师_简历.pdf">下载 PDF 简历 <span>↓</span></a>
@@ -186,6 +222,6 @@
     </main>
 
     <footer><span>© <span id="year"></span> 张力</span><span>Built with HTML · CSS · JavaScript</span></footer>
-    <script src="./script.js"></script>
+    <script src="./script.js?v=20261025-4"></script>
   </body>
 </html>
