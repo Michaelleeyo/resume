@@ -1,0 +1,23 @@
+services:
+  resume-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: michaellee/resume-site:latest
+    container_name: resume-site
+    restart: unless-stopped
+    ports:
+      - "${RESUME_PORT:-18080}:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
