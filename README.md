@@ -27,6 +27,7 @@
 │   ├── styles.css
 │   ├── script.js
 │   ├── resume.pdf
+│   ├── llms.txt
 │   └── robots.txt
 ├── compose.yaml        # 容器编排与健康检查
 ├── Dockerfile          # Nginx 运行镜像

@@ -1,0 +1,18 @@
+# 张力 · 软件开发工程师
+
+> 张力的个人简历与工程能力展示站，求职方向为软件开发工程师与 Python 后端，意向城市为南京。
+
+## 专业方向
+
+- Python 后端开发、SQL 与数据处理
+- TypeScript 页面开发与 ECharts 数据可视化
+- Docker、Kubernetes、Nginx 与项目部署交付
+- 复杂业务系统的需求拆解、接口设计、数据建模和问题定位
+
+## 主要链接
+
+- [个人主页](https://me.michaellee.win/)
+- [GitHub 项目](https://github.com/Michaelleeyo/resume)
+- [PDF 简历](https://me.michaellee.win/resume.pdf)
+- [联系邮箱](mailto:hi@michaellee.win)
+
