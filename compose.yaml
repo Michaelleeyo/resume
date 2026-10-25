@@ -6,12 +6,19 @@ services:
     image: michaellee/resume-site:latest
     container_name: resume-site
     restart: unless-stopped
-    ports:
-      - "${RESUME_PORT:-18080}:80"
     volumes:
       - ./dist:/usr/share/nginx/html:ro
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    networks:
+      - nas-edge
     healthcheck:
-      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/"]
       interval: 30s
       timeout: 3s
       retries: 3
@@ -21,3 +28,7 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+networks:
+  nas-edge:
+    external: true
