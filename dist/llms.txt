@@ -1,18 +1,26 @@
-# 张力 · 软件开发工程师
+# 张力 · Python业务开发与技术交付
 
-> 张力的个人简历与工程能力展示站，求职方向为软件开发工程师与 Python 后端，意向城市为南京。
+> 个人作品与公开简历，意向城市南京。
 
-## 专业方向
+## 职业经历
 
-- Python 后端开发、SQL 与数据处理
-- TypeScript 页面开发与 ECharts 数据可视化
-- Docker、Kubernetes、Nginx 与项目部署交付
-- 复杂业务系统的需求拆解、接口设计、数据建模和问题定位
+- 南京苏迪科技有限公司：2021.04起；2024.03起从事高校党建开发与交付，目前独立负责技术实施、开发、部署及持续运维。
+- Coreplus产品测试与工程技术支持：2021.04—2024.03，涵盖测试、构建发布、部署维护和客户支持。
+- 江苏创通电子股份有限公司：2019.10—2020.10，网络设备测试。
 
-## 主要链接
+## 代表工作
+
+- 干部考评规则、人员历史查询、考评关系生成、评分汇总、指标管理与年度报告。
+- 组织层级数据权限、跨模块统计、pandas汇总及ECharts展示。
+- 项目环境配置、联调上线、升级与运行排障。
+
+## 工作方式
+
+围绕业务目标拆解需求，考虑现有系统、权限边界、数据安全与维护；使用AI辅助代码分析、实现与排障，通过代码审查、数据核对和业务回归验证结果。
+
+## 链接
 
 - [个人主页](https://me.michaellee.win/)
-- [GitHub 项目](https://github.com/Michaelleeyo/resume)
-- [PDF 简历](https://me.michaellee.win/resume.pdf)
+- [GitHub](https://github.com/Michaelleeyo/resume)
+- [公开PDF](https://me.michaellee.win/resume.pdf?v=20261109-ai1)
 - [联系邮箱](mailto:hi@michaellee.win)
-
